@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="banner.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item header">
+            <h1 class="AG">ALUMBRADO GENERAL <br> NTC-2050 </h1>
+            <div class="item-nav">
+                <a href="index.html">Visión General</a>
+                <a href="calculoA-DV.html">Calculo en Viviendas</a>
+                <a href="circuitos-R.html">Circuitos Ramales</a>
+                <a href="factor-D.html">Factor Demanda</a>
+                <a href="factor-DPA.html">FD-P_Artefactos</a>
+                <a href="intensidad.html">Intensidad Eléctrica</a>
+
+            </div>
+            
+        </div>
+       
+            <div class="item banner">
+               <div class="capa">  </div>
+                    <div class="info"> 
+                        <h1>BIENVENIDOS</h1>
+                        <P>Explorar este fascinante campo nos lleva a comprender los principios fundamentales de la electricidad, 
+                           la distribución de energía y la ingeniería de iluminación. Además, nos invita a reflexionar sobre
+                           el impacto ambiental y social de nuestras decisiones en el diseño y uso de sistemas de iluminación.</P>
+                            <a class="leermas" href="archivos/norma_tecnica_colombiana_ntc_2050.pdf" target="_blank">Leer Más...NTC-2050</a>
+                    </div>
+              
+            </div>
+        
+        <div class="item section">
+            <section id="Intensidad">
+                <div class="wrapper">
+                    
+                    <h2>Calcular la Intensidad Eléctrica</h2><br><br>
+                    <label for="voltage">Voltage  (V):</label>
+                    <input type="number" id="voltage" placeholder="voltios"style="text-align: center; font-size: 1rem;"><br>
+                    <label for="potencia">Potencia (W)</label>
+                    <input type="number" id="potencia" placeholder="watts" style="text-align: center; font-size: 1rem;">
+                    <div class="botones">
+                        <div class="bt1"><button onclick="calcularA()">CALCULAR</button></div>
+                        <div class="bt2"><button onclick="BorrarA()">LIMPIAR</button> </div> 
+                    </div><br>  
+                        <label for="resultA"> </label>
+                        <textarea name="" id="resultA" cols="20" rows="2"  readonly onfocus="this.blur()"></textarea><br>
+                </div>
+                
+            </section><br>
+
+        </div>
+        <div class="item aside">
+            <img src="#" alt="">
+            <div>
+                
+                <article class="BTT">
+                    
+                    <p>
+                       <strong> Calcular la intensidad eléctrica:</strong>
+                        Utiliza la fórmula: Intensidad eléctrica (I) = Potencia total demandada (P) / Voltaje (V).
+                        El voltaje estándar en la mayoría de las viviendas es de 120 voltios en América del Norte y 230 voltios en Europa y otras partes del mundo.
+                        Es importante recordar que estos cálculos son estimaciones y que la potencia real consumida puede variar según el uso y las condiciones específicas de cada dispositivo y vivienda. 
+                        Es recomendable consultar a un electricista o profesional capacitado para obtener un cálculo más preciso y seguro.                     
+                            
+                    </p>
+                    <P>
+                        <strong>Determinar la potencia de cada dispositivo:</strong>
+                        Investiga la potencia nominal de cada dispositivo en vatios (W) o kilovatios (kW). 
+                        Esta información suele estar disponible en las etiquetas de los dispositivos o en sus manuales de usuario.
+                    </P>
+                </article>
+            </div>
+        </div>
+           
+    
+        <div class="item footer">
+            <p>&copy; Copyright © JATV 2024.</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+
+    </div>
+    <script src="operaciones.js"></script>
+    
+</body>
+</html>
